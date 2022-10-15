@@ -2,22 +2,22 @@
 #include <stdbool.h>
 
 /**
- * swap_i - Swap two integers in an array.
- * @i: The first integer.
- * @j: The second integer.
+ * swap_ints - Swap two integers in an array.
+ * @a: The first integer to swap.
+ * @b: The second integer to swap.
  */
-void swap_i(int *i, int *j)
+void swap_ints(int *a, int *b)
 {
 	int tmp;
 
-	tmp = *i;
-	*i = *j;
-	*j = tmp;
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 
 /**
  * bubble_sort - Sort an array of integers in ascending order.
- * @array: An array of integers.
+ * @array: An array of integers to sort.
  * @size: The size of the array.
  *
  * Description: Prints the array after each swap.
@@ -37,7 +37,7 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (array[i] > array[i + 1])
 			{
-				swap_i(array + i, array + i + 1);
+				swap_ints(array + i, array + i + 1);
 				print_array(array, size);
 				bubbly = false;
 			}
