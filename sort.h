@@ -5,6 +5,17 @@
 #include <stdlib.h>
 
 /**
+ * enum bool - Enumeration of Boolean values.
+ * @false: Equals 0.
+ * @true: Equals 1.
+ */
+typedef enum bool
+{
+	false = 0,
+	true
+} bool;
+
+/**
  * struct listint_s - Doubly linked list node
  *
  * @n: Integer stored in the node
@@ -31,4 +42,4 @@ void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker);
 void swap_node_behind(listint_t **list, listint_t **tail, listint_t **shaker);
 void cocktail_sort_list(listint_t **list);
 
-#endif
+#endif /* SORT_H */
