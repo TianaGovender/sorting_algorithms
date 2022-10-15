@@ -1,5 +1,8 @@
 #include "sort.h"
 
+void selection_sort(int *array, size_t size);
+void swap_i(int *i, int *j);
+
 /**
  * swap_i - Swap two integers in an array.
  * @i: The first integer.

@@ -1,5 +1,5 @@
-#ifndef SORT_H
-#define SORT_H
+#ifndef _SORT_H
+#define _SORT_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -26,7 +26,7 @@ void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
-void shell_sort(int *array, size_t size)
+void shell_sort(int *array, size_t size);
 void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker);
 void swap_node_behind(listint_t **list, listint_t **tail, listint_t **shaker);
 void cocktail_sort_list(listint_t **list);
